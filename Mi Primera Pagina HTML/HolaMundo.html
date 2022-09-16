@@ -8,6 +8,21 @@
     <!-- aqui va el titulo de la pagina web -->
     <title>Mi Primera WebPage</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- este codigo JavaScript seria OutLine -->
+    <script>
+
+      function tiempo() {
+
+        document.getElementById('tiempo').innerHTML = Date();
+
+      }
+
+    </script>
+    <!-- fin de la etiqueta script -->
+
+    <!-- insercion de un archivo JavaScript al codigo HTML -->
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -26,10 +41,10 @@
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="#" style="color: white;">Inicio</a>
+                <a class="nav-link active" href="HolaMundo.html" style="color: white;">Inicio</a>
               </li>
              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white;">Nosotros</a>
+                <a class="nav-link" href="Nosotros.html" style="color: white;">Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#piedepagina" style="color: white;" >Footer</a>
@@ -67,8 +82,14 @@
         <button class="btn btn-primary" type="submit" onclick="alert('Boton Funcionando')">Enviar</button>
         <br><br>
       </form>
-      
+      <div style="text-align: center;">
+        <button class="btn btn-success" onclick="time()">¿Que hora es?</button>
+        <p id="tiempo"></p>
+      </div>
+
+
     </main>
+    <br><br><br><br>
     <footer id="piedepagina">
         <span>Copyright 2022 grupo G45</span>
     </footer>
