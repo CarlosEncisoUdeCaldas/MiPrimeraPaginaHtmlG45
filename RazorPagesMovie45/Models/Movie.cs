@@ -14,5 +14,6 @@ namespace RazorPagesMovie45.Models
         public string Genre { get; set; } = string.Empty;
 
         public decimal Price { get; set; }
+
     }
 }
